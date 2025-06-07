@@ -30,6 +30,11 @@
             text-align: center;
             margin-bottom: 2rem;
         }
+        .register-header img {
+            width: 100px;
+            height: auto;
+            margin-bottom: 1rem;
+        }
         .register-header h1 {
             color: #1a73e8;
             font-size: 2rem;
@@ -112,6 +117,7 @@
 <body>
     <div class="register-container">
         <div class="register-header">
+            <img src="{{ asset('assets/logo_sman17.png') }}" alt="Logo SMAN 17 Kabupaten Tangerang">
             <h1>SekolahCare</h1>
             <p>Platform Pengaduan Masalah Sekolah<br>SMAN 17 Kabupaten Tangerang</p>
         </div>
