@@ -204,13 +204,13 @@
                         @if(auth()->user()->role === 'admin')
                             <a href="{{ route('admin.dashboard') }}" class="btn btn-login">Dashboard</a>
                         @elseif(auth()->user()->role === 'kepala_sekolah')
-                            <a href="{{ route('kepsek.dashboard') }}" class="btn btn-login">Dashboard</a>
+                            <a href="{{ route('kepsek.beranda') }}" class="btn btn-login">Dashboard</a>
                         @elseif(auth()->user()->role === 'guru_bk')
-                            <a href="{{ route('bk.dashboard') }}" class="btn btn-login">Dashboard</a>
+                            <a href="{{ route('guruBk.beranda') }}" class="btn btn-login">Dashboard</a>
                         @elseif(auth()->user()->role === 'wali_kelas')
-                            <a href="{{ route('walikelas.dashboard') }}" class="btn btn-login">Dashboard</a>
+                            <a href="{{ route('waliKelas.beranda') }}" class="btn btn-login">Dashboard</a>
                         @else
-                            <a href="{{ route('siswa.dashboard') }}" class="btn btn-login">Dashboard</a>
+                            <a href="{{ route('siswa.beranda') }}" class="btn btn-login">Dashboard</a>
                         @endif
                     @else
                         @if (Route::has('register'))
