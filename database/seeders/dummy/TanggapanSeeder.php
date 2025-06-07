@@ -33,8 +33,8 @@ class TanggapanSeeder extends Seeder
         ];
 
         foreach ($pengaduan as $p) {
-            // Generate 1-2 tanggapan per pengaduan
-            $numTanggapan = rand(1, 2);
+            // Generate 1-3 tanggapan per pengaduan
+            $numTanggapan = rand(1, 3);
             
             for ($i = 0; $i < $numTanggapan; $i++) {
                 // Random staff user

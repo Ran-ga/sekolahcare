@@ -16,7 +16,7 @@ class UserSeeder extends Seeder
         User::create([
             'name' => 'Admin',
             'email' => 'admin@sekolahcare.com',
-            'password' => Hash::make('adminsman17'),
+            'password' => Hash::make('password'),
             'role' => 'admin',
             'nomor_induk' => 'ADM001',
             'no_hp' => '081234567890',
@@ -94,7 +94,7 @@ class UserSeeder extends Seeder
 
         $studentCounter = 1;
         foreach ($kelas as $k) {
-            for ($i = 1; $i <= 5; $i++) {
+            for ($i = 1; $i <= 10; $i++) {
                 $firstName = $firstNames[array_rand($firstNames)];
                 $lastName = $lastNames[array_rand($lastNames)];
                 $name = $firstName . ' ' . $lastName;

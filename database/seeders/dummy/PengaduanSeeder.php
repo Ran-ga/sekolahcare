@@ -108,7 +108,7 @@ class PengaduanSeeder extends Seeder
         $endDate2024 = Carbon::create(2025, 5, 30);
 
         // Generate 200 complaints for 2023/2024
-        for ($i = 0; $i < 50; $i++) {
+        for ($i = 0; $i < 200; $i++) {
             $category = $categories->random();
             $student = $students->random();
             $status = $statuses[array_rand($statuses)];
@@ -126,7 +126,7 @@ class PengaduanSeeder extends Seeder
         }
 
         // Generate 150 complaints for 2024/2025 (sampai 30 Mei 2025)
-        for ($i = 0; $i < 30; $i++) {
+        for ($i = 0; $i < 150; $i++) {
             $category = $categories->random();
             $student = $students->random();
             $status = $statuses[array_rand($statuses)];
